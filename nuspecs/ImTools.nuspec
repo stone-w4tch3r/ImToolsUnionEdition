@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata minClientVersion="3.3.0">
-        <id>ImTools</id>
-        <version>4.0.0</version>
-        <authors>Maksim Volkau</authors>
+        <id>ImToolsUnionEdition</id>
+        <version>0.1</version>
+        <authors>stone-w4tch3r</authors>
         <copyright>Copyright © 2016-2023 Maksim Volkau</copyright>
-        <projectUrl>https://github.com/dadhi/ImTools</projectUrl>
+        <projectUrl>https://github.com/stone-w4tch3r/ImToolsUnionEdition</projectUrl>
         <license type="expression">MIT</license>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>
 <![CDATA[
+        Extension for ImTools package. Forked from original source code.
+        Contains classes like Unit or Union from old ImTools. No changes were made to their code.
+        ---original description---
         Immutable persistent collections, algebraic sum-type aka descriminated union, Ref type and supportive extensions for performant functional programming in C#.
         Split from the DryIoc: https://github.com/dadhi/DryIoc
 ]]>
         </description>
-        <tags>FP Performance Simple Functional Immutable Persistent Map Avl 2-3Tree Self Balanced Tree Dictionary Thread-safe Functional Atomic Ref Algebraic Discriminated Union SumType</tags>
+        <tags>FP Performance Simple Functional Immutable Persistent Map Avl 2-3Tree Self Balanced Tree Dictionary Thread-safe Functional Atomic Ref Algebraic Discriminated Union SumType Unit</tags>
         <releaseNotes>
 <![CDATA[
+## v0.1 first release
+
+`Unit` and `Union` classes are now back. They were removed from DryIoc and ImTools packages, but were still present in the source code. 
+So here they are again. 
+This package contains only Union.cs, original ImTools code not included.
+
+---original release notes---
+
 ## v4.0.0 Major release
 
 ### Breaking changes
@@ -56,8 +67,8 @@ but you may expect that some types and methods were renamed, or new overloads we
         <file src="..\LICENSE.txt" />
         <file src="..\ImTools.snk" />
 
-        <file src="..\src\ImTools\ImTools.cs" target="content\net45\ImTools" />
-        <file src="..\src\ImTools\ImTools.cs" target="contentFiles\cs\net45\ImTools" />
-        <file src="..\src\ImTools\ImTools.cs" target="contentFiles\cs\netstandard2.0\ImTools" />
+        <file src="..\playground\ImTools.UnionPlayground\Union.cs" target="content\net45\Union" />
+        <file src="..\playground\ImTools.UnionPlayground\Union.cs" target="contentFiles\cs\net45\Union" />
+        <file src="..\playground\ImTools.UnionPlayground\Union.cs" target="contentFiles\cs\netstandard2.0\Union" />
     </files>
 </package>
